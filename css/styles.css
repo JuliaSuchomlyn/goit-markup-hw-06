@@ -290,6 +290,10 @@ nav {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
+.subscribe-button {
+  display: flex;
+  align-items: center;
+}
 /* ===buttons end=== */
 /* ===sections primary page start===*/
 .features-list .item:not(:last-child),
@@ -538,6 +542,7 @@ nav {
 .footer-items {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 .social-link-list-footer {
   display: flex;
@@ -560,6 +565,23 @@ nav {
 }
 .color-icon-footer {
   fill: var(--primary-white-color);
+}
+.subscribe-form {
+  margin-left: auto;
+}
+.subscribe-button-text {
+  margin-right: 10px;
+}
+.subscribe-container {
+  display: flex;  
+}
+.subscribe-area {
+  border-radius: 4px;
+  margin-right: 12px;
+  min-width: 358px;
+  padding-left: 16px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 /* ===footer end=== */
 /* ===backdrop start=== */
