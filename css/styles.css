@@ -652,7 +652,7 @@ nav {
   color: var(--secondary-color-text);
 }
 .form {
-  padding: 40px;
+  padding: 32px;
 }
 .form-label,
 .comment-label {
@@ -663,7 +663,7 @@ nav {
   margin-bottom: 4px;
 }
 .form-input {
-  padding: 11px;
+  padding: 12px;
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -686,7 +686,9 @@ nav {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input:hover,
-.form-input:focus {
+.comment:hover,
+.form-input:focus,
+.comment:focus {
   outline: none;
   border-color: var(--accent-color);
 }
@@ -694,9 +696,29 @@ nav {
 .form-input:focus ~ .form-icon {
   fill: var(--accent-color)
 }
+.comment {
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  height: 120px;
+  
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.comment::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0, 5);
+}
 .form-btn {
   display: block;
+  min-width: 200px;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 /* ===backdrop end=== */
